@@ -1,0 +1,178 @@
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px 20px;
+  position: relative;
+}
+
+.hero-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.typing {
+  font-size: 2.5rem;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(20, end) forwards, blink .7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 18ch; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Sections */
+.about, .skills, .projects, .contact {
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 30px auto;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Skills */
+.skill {
+  margin: 20px 0;
+  text-align: left;
+}
+.skill p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.progress {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+  width: 100%;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  border-radius: 20px;
+  width: 0;
+  animation: fill 3s forwards;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, background 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.project-img:hover {
+  transform: scale(1.05);
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #6a11cb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.project-card a:hover {
+  background: #2575fc;
+}
+
+/* Contact */
+.contact a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Bubble Background */
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  bottom: -150px;
+  animation: bubble 20s infinite;
+  border-radius: 50%;
+}
+.bubbles li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+.bubbles li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+.bubbles li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+.bubbles li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+.bubbles li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+.bubbles li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+.bubbles li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+.bubbles li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+.bubbles li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+.bubbles li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+@keyframes bubble {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.5; }
+  100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+}
