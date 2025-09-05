@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taheia Saad | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Background Bubbles -->
-  <ul class="bubbles">
-    <li></li><li></li><li></li><li></li><li></li>
-    <li></li><li></li><li></li><li></li><li></li>
-  </ul>
+  <!-- Background Gradient -->
+  <div class="background"></div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -55,15 +54,15 @@
     <div class="services-container">
       <div class="service-card">
         <h3>📊 Data Analysis & Visualization</h3>
-        <p>Perform in-depth data analysis to uncover actionable insights. Build interactive dashboards and reports using Python, Power BI, Matplotlib, Seaborn, and Plotly.</p>
+        <p>Perform in-depth analysis to uncover actionable insights. Build interactive dashboards and reports using Python, Power BI, Matplotlib, Seaborn, and Plotly.</p>
       </div>
       <div class="service-card">
-        <h3>🤖 Machine Learning & AI Solutions</h3>
-        <p>Develop predictive models for classification, regression, clustering, and time series forecasting. Apply NLP for text analysis and sentiment analysis. Deploy ML models in production.</p>
+        <h3>🤖 Machine Learning & AI</h3>
+        <p>Develop predictive models (classification, regression, clustering, time series). Apply NLP for text analysis. Optimize and deploy ML models.</p>
       </div>
       <div class="service-card">
         <h3>🧹 Data Cleaning & Preprocessing</h3>
-        <p>Handle missing values, outliers, and noisy data. Transform raw datasets into structured formats. Feature scaling, encoding, and feature engineering.</p>
+        <p>Handle missing values, outliers, and noisy data. Transform datasets into structured formats. Feature scaling, encoding, and engineering.</p>
       </div>
     </div>
   </section>
@@ -72,12 +71,12 @@
   <section class="skills" id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card">🐍 Python</div>
-      <div class="skill-card">🤖 Machine Learning</div>
-      <div class="skill-card">🗄️ SQL & Databases</div>
-      <div class="skill-card">📊 Data Visualization</div>
-      <div class="skill-card">📈 Statistical Analysis</div>
-      <div class="skill-card">📝 Data Cleaning</div>
+      <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Data analysis, scripting, and ML development.</p></div>
+      <div class="skill-card"><i class="fa-solid fa-robot"></i><h3>Machine Learning</h3><p>Predictive modeling, deep learning, NLP.</p></div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i><h3>SQL & Databases</h3><p>Query optimization, schema design.</p></div>
+      <div class="skill-card"><i class="fa-solid fa-chart-line"></i><h3>Data Visualization</h3><p>Matplotlib, Seaborn, Plotly, Power BI.</p></div>
+      <div class="skill-card"><i class="fa-solid fa-sitemap"></i><h3>Data Structures</h3><p>Efficient algorithms and optimization.</p></div>
+      <div class="skill-card"><i class="fa-solid fa-square-root-variable"></i><h3>Statistics</h3><p>Hypothesis testing, regression, probability.</p></div>
     </div>
   </section>
 
@@ -97,21 +96,36 @@
         <p>Forecasting temperature trends using ARIMA and LSTM models.</p>
         <a href="https://github.com/taheiasaad/Temperature-Prediction-with-Deployment2" target="_blank">View on GitHub</a>
       </div>
+      <div class="project-card">
+        <img src="twitter.jpg" alt="Twitter Sentiment Analysis on Palestine">
+        <h3>Twitter Sentiment Analysis on Palestine</h3>
+        <p>
+          Built ML & DL NLP models to classify tweets (Positive, Negative, Neutral).  
+          Used Word Clouds for insights. Highlighted global support, prayers, and misinformation.
+        </p>
+        <p><b>Tools:</b> Python, Pandas, NumPy, Scikit-learn, TensorFlow, NLTK, Matplotlib</p>
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="mailto:taheiasaa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/taheia" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/taheia-saad-33aa462a6" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://wa.me/201201960867" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
     <p>Email: <a href="mailto:taheiasaa@gmail.com">taheiasaa@gmail.com</a></p>
     <p>Phone: +201201960867</p>
-    <p><a href="https://linkedin.com/in/taheia-saad-33aa462a6" target="_blank">LinkedIn</a> | 
-       <a href="https://github.com/taheia" target="_blank">GitHub</a></p>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
