@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taheia Saad | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Background bubbles -->
+  <div class="bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
 
-  <!-- Background Gradient -->
-  <div class="background"></div>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="profile.jpg" alt="Taheia Saad" class="hero-img">
-    <h1><span class="typing"></span></h1>
+  <!-- Hero -->
+  <header class="hero">
+    <img src="profile.jpg" alt="Taheia Saad" class="profile-pic">
+    <h1 class="typing"></h1>
     <p>Data Scientist & Machine Learning Engineer</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </section>
+  </header>
 
-  <!-- About Me -->
+  <!-- About -->
   <section class="about" id="about">
     <h2>About Me</h2>
     <p>
-      I am a Data Scientist and Machine Learning Engineer with a strong foundation in Statistics and Linear Algebra.  
-      I have hands-on experience in Data Analysis, Data Visualization, and Machine Learning.  
-      Proficient in tools such as Python, SQL, Power BI, and Power Query.  
+      I am a Data Scientist and Machine Learning Engineer with a strong foundation in Statistics and Linear Algebra.
+      I have hands-on experience in Data Analysis, Data Visualization, and Machine Learning.
+      Proficient in tools such as Python, SQL, Power BI, and Power Query.
       Passionate about exploring data to extract insights and support data-driven decision-making.
     </p>
   </section>
@@ -36,33 +36,17 @@
   <section class="education" id="education">
     <h2>Education</h2>
     <div class="edu-card">
-      <h3>Bachelor’s Degree in Data Science</h3>
-      <p>Faculty of Computer and Data Science, Alexandria University (2023 – 2027)</p>
-      <h4>Relevant Coursework:</h4>
-      <ul>
-        <li>Machine Learning & AI</li>
-        <li>Databases</li>
-        <li>Data Science Tools</li>
-        <li>Data Structures</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="services" id="services">
-    <h2>Services</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <h3>📊 Data Analysis & Visualization</h3>
-        <p>Perform in-depth analysis to uncover actionable insights. Build interactive dashboards and reports using Python, Power BI, Matplotlib, Seaborn, and Plotly.</p>
-      </div>
-      <div class="service-card">
-        <h3>🤖 Machine Learning & AI</h3>
-        <p>Develop predictive models (classification, regression, clustering, time series). Apply NLP for text analysis. Optimize and deploy ML models.</p>
-      </div>
-      <div class="service-card">
-        <h3>🧹 Data Cleaning & Preprocessing</h3>
-        <p>Handle missing values, outliers, and noisy data. Transform datasets into structured formats. Feature scaling, encoding, and engineering.</p>
+      <img src="university.png" alt="Alexandria University" class="edu-logo">
+      <div>
+        <h3>Bachelor’s Degree in Data Science</h3>
+        <p>Faculty of Computer and Data Science, Alexandria University (2023 – 2027)</p>
+        <h4>Relevant Coursework:</h4>
+        <ul>
+          <li>Machine Learning & AI</li>
+          <li>Databases</li>
+          <li>Data Science Tools</li>
+          <li>Data Structures</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -71,39 +55,52 @@
   <section class="skills" id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Data analysis, scripting, and ML development.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-robot"></i><h3>Machine Learning</h3><p>Predictive modeling, deep learning, NLP.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-database"></i><h3>SQL & Databases</h3><p>Query optimization, schema design.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-chart-line"></i><h3>Data Visualization</h3><p>Matplotlib, Seaborn, Plotly, Power BI.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-sitemap"></i><h3>Data Structures</h3><p>Efficient algorithms and optimization.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-square-root-variable"></i><h3>Statistics</h3><p>Hypothesis testing, regression, probability.</p></div>
+      <div class="skill-card">🐍 Python, Jupyter, Problem Solving</div>
+      <div class="skill-card">📊 Pandas, Data Cleaning, Visualization, Stats</div>
+      <div class="skill-card">🤖 Machine Learning, Deep Learning, NLP</div>
+      <div class="skill-card">🛠️ SQL, Databases, Power BI</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Data Analysis & Visualization</h3>
+        <p>Perform in-depth analysis, uncover insights, and build interactive dashboards with Python, Power BI, and Plotly.</p>
+      </div>
+      <div class="service-card">
+        <h3>Machine Learning & AI</h3>
+        <p>Develop predictive models for classification, regression, clustering, and NLP. Optimize with CV, tuning, and deploy in production.</p>
+      </div>
+      <div class="service-card">
+        <h3>Data Cleaning & Preprocessing</h3>
+        <p>Handle missing values, outliers, and noisy data. Transform raw datasets into structured formats with scaling & encoding.</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects -->
   <section class="projects" id="projects">
     <h2>Projects</h2>
-    <div class="projects-container">
+    <div class="projects-grid">
       <div class="project-card">
-        <img src="wuzzuf.jpg" alt="Scraping Wuzzuf Data">
+        <img src="wuzzuf.jpg" alt="Wuzzuf Project">
         <h3>Scraping Wuzzuf Data</h3>
-        <p>Collected and analyzed job listings using Python Web Scraping libraries.</p>
+        <p>Collected and analyzed job listings from Wuzzuf using Python web scraping libraries.</p>
         <a href="https://github.com/taheiasaad/scrapping-data-from-wuzzuf" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card">
-        <img src="temperature.jpg" alt="Temperature Prediction">
+        <img src="temperature.jpg" alt="Temperature Project">
         <h3>Temperature Prediction</h3>
-        <p>Forecasting temperature trends using ARIMA and LSTM models.</p>
+        <p>Time series forecasting to predict temperature trends using ARIMA and LSTM models.</p>
         <a href="https://github.com/taheiasaad/Temperature-Prediction-with-Deployment2" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card">
-        <img src="twitter.jpg" alt="Twitter Sentiment Analysis on Palestine">
+        <img src="twitter.jpg" alt="Twitter Sentiment Analysis">
         <h3>Twitter Sentiment Analysis on Palestine</h3>
-        <p>
-          Built ML & DL NLP models to classify tweets (Positive, Negative, Neutral).  
-          Used Word Clouds for insights. Highlighted global support, prayers, and misinformation.
-        </p>
-        <p><b>Tools:</b> Python, Pandas, NumPy, Scikit-learn, TensorFlow, NLTK, Matplotlib</p>
+        <p>ML & DL for NLP to analyze tweets, classify sentiments, and visualize insights using Word Clouds.</p>
       </div>
     </div>
   </section>
@@ -111,19 +108,24 @@
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <div class="social-icons">
-      <a href="mailto:taheiasaa@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://github.com/taheia" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://linkedin.com/in/taheia-saad-33aa462a6" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://wa.me/201201960867" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="contact-list">
+      <p><i class="fa-solid fa-envelope"></i> Email: 
+        <a href="mailto:taheiasaa@gmail.com">taheiasaa@gmail.com</a></p>
+      <p><i class="fa-brands fa-github"></i> GitHub: 
+        <a href="https://github.com/taheia" target="_blank">github.com/taheia</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> LinkedIn: 
+        <a href="https://linkedin.com/in/taheia-saad-33aa462a6" target="_blank">linkedin.com/in/taheia-saad</a></p>
+      <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 
+        <a href="https://wa.me/201201960867" target="_blank">+20 1201960867</a></p>
     </div>
-    <p>Email: <a href="mailto:taheiasaa@gmail.com">taheiasaa@gmail.com</a></p>
-    <p>Phone: +201201960867</p>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 
 
