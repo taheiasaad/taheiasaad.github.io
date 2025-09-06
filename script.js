@@ -1,3 +1,4 @@
+// Typing Effect
 document.addEventListener("DOMContentLoaded", function () {
   const text = "I'm Taheia Saad";
   const typingElement = document.querySelector(".typing");
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (index < text.length) {
       typingElement.textContent += text.charAt(index);
       index++;
-      setTimeout(type, 120);
+      setTimeout(type, 150);
     }
   }
 
